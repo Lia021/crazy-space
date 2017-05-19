@@ -20,7 +20,7 @@
                     }
                 }.bind(this))
                 if (mesh) {
-                    
+                     mesh.scale.copy(mesh.getWorldScale());
                     this.el.setObject3D('mesh', mesh);
                     // setObject3D emits this event in a-frame 0.4.0
                     this.el.emit('object3dset', {
