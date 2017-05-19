@@ -54,7 +54,7 @@
 <a-asset-item id="castle" src="https://rawgit.com/Lia021/fog-space/master/castle/castle6.dae"></a-asset-item>
 <a-asset-item id="crown" src="https://rawgit.com/Lia021/fog-space/master/crown/crown.dae"></a-asset-item>
 <a-asset-item id="staff" src="https://rawgit.com/Lia021/fog-space/master/staff/eye-staff.dae"></a-asset-item>
-<a-asset-item id="wa" src="https://rawgit.com/Lia021/fog-space/master/staff/eye-staff.dae"></a-asset-item>
+<a-asset-item id="wall" src="https://rawgit.com/Lia021/fog-space/master/bush/untitled.dae"></a-asset-item>
 
 
 
@@ -71,11 +71,10 @@
       </a-assets>
       
       <!--sky-->
-      <a-sky radius="800" src="https://rawgit.com/Lia021/hunted-birthday/master/star.jpg"><a-animation attribute="rotation" dur="190000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
-      </a-sky>
+      <a-sky radius="800" src="https://rawgit.com/Lia021/hunted-birthday/master/star.jpg"></a-sky>
 
            <!-- Basic plane. -->
-  <a-plane position="0 -2 0"color="white"opacity="0.5" rotation="90 0 0"side="double"height="800" width="800"></a-plane>
+  <a-plane position="0 -2 0"src="http://i.imgur.com/SIPyiR4.jpg"opacity="0.5" rotation="90 0 0"side="double"height="1000" width="1000"></a-plane>
 
 
      <!--test-->
@@ -84,9 +83,13 @@
   <!--castle-->
       <a-entity position="0 -0.50 3" scale="5 5 5" rotation="0 90 0" collada-model="#castle"n-mesh-collider="type: environment; convex: false"></a-entity>
   
+    <!--wall-->
+      <a-entity position="0 -1.60 3" scale="50 18 50" rotation="0 90 0" collada-model="#wall"n-mesh-collider="type: environment; convex: false"></a-entity>
+  
+
   <!--staff-->
 
-      <a-entity position="13.50 1 -1" scale="1 1 1" mixin="staff" rotation="90 0 0" instantiator="on: click;group: staff; mixin: staff parent-to-right-hand"></a-entity>
+      <a-entity position="0.50 1 -7" scale="1.50 1.50 1.50" mixin="staff" rotation="90 0 0" instantiator="on: click;group: staff; mixin: staff parent-to-right-hand"></a-entity>
 
   <!--crown-->
       <a-entity position="-0.50 1 -7.50" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
