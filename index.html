@@ -55,6 +55,7 @@
 <a-asset-item id="crown" src="https://rawgit.com/Lia021/fog-space/master/crown/crown.dae"></a-asset-item>
 <a-asset-item id="staff" src="https://rawgit.com/Lia021/fog-space/master/staff/eye-staff.dae"></a-asset-item>
 <a-asset-item id="wall" src="https://rawgit.com/Lia021/fog-space/master/bush/untitled.dae"></a-asset-item>
+<a-asset-item id="ufo" src="https://rawgit.com/Lia021/crazy-space/master/ufo/ufo.dae"></a-asset-item>
 
 
 
@@ -71,20 +72,20 @@
       </a-assets>
       
       <!--sky-->
-      <a-sky radius="800" src="https://rawgit.com/Lia021/hunted-birthday/master/star.jpg"></a-sky>
+      <a-sky radius="750" src="https://rawgit.com/Lia021/hunted-birthday/master/star.jpg"altspace-cursor-collider="enabled: false"></a-sky>
 
            <!-- Basic plane. -->
-  <a-plane position="0 -2 0"src="http://i.imgur.com/SIPyiR4.jpg"opacity="0.5" rotation="90 0 0"side="double"height="1000" width="1000"></a-plane>
+  <a-plane position="0 -0.50 0"src="http://i.imgur.com/SIPyiR4.jpg"opacity="0.5" rotation="90 0 0"side="double"height="1000" width="1000"></a-plane>
 
 
      <!--test-->
-      <a-entity position="0 1 0" scale="1 1 1" rotation="0 90 0" collada-model="#test"n-mesh-collider="type: environment; convex: false"></a-entity>
+      <a-entity position="0 1 0" scale="3 3 3" rotation="0 90 0" collada-model="#test"n-mesh-collider="type: environment; convex: false"></a-entity>
 
   <!--castle-->
-      <a-entity position="0 -0.50 3" scale="5 5 5" rotation="0 90 0" collada-model="#castle"n-mesh-collider="type: environment; convex: false"></a-entity>
+      <a-entity position="0 -0.40 420" scale="5 5 5" rotation="0 90 0" collada-model="#castle"n-mesh-collider="type: environment; convex: false"></a-entity>
   
     <!--wall-->
-      <a-entity position="0 -1.60 3" scale="50 18 50" rotation="0 90 0" collada-model="#wall"n-mesh-collider="type: environment; convex: false"></a-entity>
+      <a-entity position="0 -1.60 420" scale="50 18 50" rotation="0 90 0" collada-model="#wall"n-mesh-collider="type: environment; convex: false"></a-entity>
   
 
   <!--staff-->
@@ -94,6 +95,8 @@
   <!--crown-->
       <a-entity position="-0.50 1 -7.50" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
  
+ <!--ufo-->
+      <a-entity position="20 1 0" scale="3 3 3" rotation="0 90 0" collada-model="#ufo"n-mesh-collider="type: environment; convex: false"></a-entity>
 
 
 </body>
