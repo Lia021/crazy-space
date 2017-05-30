@@ -55,7 +55,8 @@
 <a-asset-item id="crown" src="https://rawgit.com/Lia021/fog-space/master/crown/crown.dae"></a-asset-item>
 <a-asset-item id="staff" src="https://rawgit.com/Lia021/fog-space/master/staff/eye-staff.dae"></a-asset-item>
 <a-asset-item id="wall" src="https://rawgit.com/Lia021/fog-space/master/bush/untitled.dae"></a-asset-item>
-<a-asset-item id="ufo" src="https://rawgit.com/Lia021/crazy-space/master/ufo/ufo.dae"></a-asset-item>
+<a-asset-item id="mountain" src="https://rawgit.com/Lia021/crazy-space/master/moutains/moutains.dae"></a-asset-item>
+
 
 
 
@@ -95,8 +96,14 @@
   <!--crown-->
       <a-entity position="-0.50 1 -7.50" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
  
- <!--ufo-->
-      <a-entity position="20 1 0" scale="3 3 3" rotation="0 90 0" collada-model="#ufo"n-mesh-collider="type: environment; convex: false"></a-entity>
+ <!--mountain1-->
+      <a-entity position="485 -0.50 0" scale="18 18 18" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+<!--mountain2-->
+      <a-entity position="485 -0.50 13" scale="15 15 15" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+<!--mountain3-->
+      <a-entity position="485 -0.50 -15" scale="12 12 12" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
 
 
 </body>
