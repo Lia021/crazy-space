@@ -56,7 +56,7 @@
 <a-asset-item id="staff" src="https://rawgit.com/Lia021/fog-space/master/staff/eye-staff.dae"></a-asset-item>
 <a-asset-item id="wall" src="https://rawgit.com/Lia021/fog-space/master/bush/untitled.dae"></a-asset-item>
 <a-asset-item id="mountain" src="https://rawgit.com/Lia021/crazy-space/master/moutains/moutains.dae"></a-asset-item>
-
+<a-asset-item id="smoke-mountain" src="https://rawgit.com/Lia021/crazy-space/master/smoke-%20mountains/smoke%20mountains.dae"></a-asset-item>
 
 
 
@@ -75,36 +75,80 @@
       <!--sky-->
       <a-sky radius="750" src="https://rawgit.com/Lia021/hunted-birthday/master/star.jpg"altspace-cursor-collider="enabled: false"></a-sky>
 
-           <!-- Basic plane. -->
-  <a-plane position="0 -0.50 0"src="http://i.imgur.com/SIPyiR4.jpg"opacity="0.5" rotation="90 0 0"side="double"height="1000" width="1000"></a-plane>
+     <!-- Basic plane. -->
+  <a-plane position="0 -0.20 0"src="http://i.imgur.com/SIPyiR4.jpg"opacity="0.75" rotation="90 0 0"side="double"height="1000" width="1000"></a-plane>
 
 
      <!--test-->
       <a-entity position="0 1 0" scale="3 3 3" rotation="0 90 0" collada-model="#test"n-mesh-collider="type: environment; convex: false"></a-entity>
 
-  <!--castle-->
+    <!--castle-->
       <a-entity position="0 -0.40 420" scale="5 5 5" rotation="0 90 0" collada-model="#castle"n-mesh-collider="type: environment; convex: false"></a-entity>
   
     <!--wall-->
       <a-entity position="0 -1.60 420" scale="50 18 50" rotation="0 90 0" collada-model="#wall"n-mesh-collider="type: environment; convex: false"></a-entity>
   
 
-  <!--staff-->
+    <!--staff-->
 
       <a-entity position="0.50 1 -7" scale="1.50 1.50 1.50" mixin="staff" rotation="90 0 0" instantiator="on: click;group: staff; mixin: staff parent-to-right-hand"></a-entity>
 
-  <!--crown-->
+   <!--crown-->
       <a-entity position="-0.50 1 -7.50" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
  
- <!--mountain1-->
-      <a-entity position="485 -0.50 0" scale="18 18 18" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+   <!--mountain1-->
+      <a-entity position="485 -0.40 0" scale="18 18 18" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
 
-<!--mountain2-->
-      <a-entity position="485 -0.50 13" scale="15 15 15" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+  <!--mountain2-->
+      <a-entity position="485 -0.40 13" scale="15 15 15" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
 
-<!--mountain3-->
-      <a-entity position="485 -0.50 -15" scale="12 12 12" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+  <!--mountain3-->
+      <a-entity position="485 -0.40 -15" scale="12 12 12" rotation="0 90 0" collada-model="#mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
 
+
+  <!--smoke-mountain-->
+      <a-entity position="0 -0.50 -15" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--smoke-mountain2-->
+      <a-entity position="75 -0.50 -55" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--smoke-mountain3-->
+      <a-entity position="95 -0.50 95" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--smoke-mountain4-->
+      <a-entity position="-85 -0.50 15" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--smoke-mountain5-->
+      <a-entity position="-55 -0.50 95" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--smoke-mountain6-->
+      <a-entity position="155 -0.50 205" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+ <!--smoke-mountain7-->
+      <a-entity position="-15 -0.50 155" scale="7 7 7" rotation="0 90 0" collada-model="#smoke-mountain"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+      
+
+  <!--smoke-->
+      <a-entity n-object='res: effects/steam'position="0 1 -15"></a-entity>
+
+  <!--smoke2-->
+      <a-entity n-object='res: effects/steam'position="75 1 -55"></a-entity>
+
+  <!--smoke3-->
+      <a-entity n-object='res: effects/steam'position="95 1 95"></a-entity>
+
+  <!--smoke4-->
+      <a-entity n-object='res: effects/steam'position="-85 1 15"></a-entity>
+
+  <!--smoke5-->
+      <a-entity n-object='res: effects/steam'position="-55 1 95"></a-entity>
+
+  <!--smoke6-->
+      <a-entity n-object='res: effects/steam'position="155 1 205"></a-entity>
+
+  <!--smoke7-->
+      <a-entity n-object='res: effects/steam'position="-15 1 155"></a-entity>
 
 </body>
 </html>
